@@ -1,1 +1,75 @@
 /* All CSS Content */
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #101010;
+   word-spacing: 0.25rem;
+}
+
+.neon-yellow {
+    color: #ffc100;
+}
+
+.working-heading {
+    font-size:2.3rem; 
+    font-weight:1000; 
+    color:white;
+}
+
+.center-line {
+    
+    border-left: 0.58rem solid #ffc100;
+    height: 110%/*58rem*/;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.sub-heading {
+    font-size:1.5rem; 
+    font-weight: 1000;
+}
+
+
+.small-subtext {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.padding-for-mobile {
+    padding: 0 1rem 2rem 4rem;
+    text-align: left;
+    
+}
+
+.sticky-corner {
+    position: sticky;
+    top: 0px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+.small-subtext {
+    font-size: 0.8rem;
+}
+
+.padding-for-mobile {
+    padding: 0 0 4rem 4rem;
+}
+
+.sticky-corner {
+    position: static;
+}
+
+.sub-heading {
+    font-size: 1.3rem;
+}
+
+.working-heading {
+    font-size: 1.8rem;
+}
+
+}
