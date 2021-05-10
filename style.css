@@ -209,6 +209,16 @@ body {
 
 
 
+.carousel-img-styles {
+    border: 0.13rem solid white; 
+    border-radius: 1rem;
+}
+
+.carousel-container {
+    width:55%;
+}
+
+
 
 @media only screen and (max-width: 767px) {
 .small-subtext {
@@ -237,6 +247,10 @@ body {
 }
 .pic{
     flex-direction: column;
+}
+
+.carousel-container {
+    width: 85%;
 }
 
 }
