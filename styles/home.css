@@ -22,7 +22,36 @@ body {
   color: #ffc100;
 }
 
-.working-heading, .eng, .feedback, .some {
+.working-heading {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+.date-style {
+  font-weight:850;
+  padding: 0 0 0.3rem 0;
+} 
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 1000;
+  padding: 0 0 0.3rem 0;
+}
+
+.small-subtext {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.process-heading {
+  font-weight:1000; 
+  font-size:0.95rem;
+}
+
+.eng, .feedback, .some {
   font-size: 2.3rem;
   font-weight: 1000;
   color: white;
@@ -38,25 +67,34 @@ body {
   left: 0%;
 }
 
-.sub-heading {
-  font-size: 1.5rem;
-  font-weight: 1000;
-}
 
-.small-subtext {
-  color: white;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
+
+
 
 .padding-for-mobile {
   padding: 0 1rem 2rem 4rem;
   text-align: left;
+  /*background-color:  white;*/
 }
 
 .sticky-corner {
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
+}
+
+.timeline-left-style {
+  color: white; 
+  text-align: right; 
+  padding: 0 4rem 0 5.2rem;
+}
+
+.timeline-right-style {
+  color: white; 
+  text-align: left; 
+  position:relative; 
+  padding:0 5.2rem 0 4rem;
+  overflow-y: hidden;
 }
 
 .d-block {
@@ -332,7 +370,7 @@ h1 {
   }
 
   .padding-for-mobile {
-    padding: 0 0 4rem 4rem;
+    padding: 0 0 4rem 2rem;
   }
 
   .sticky-corner {
@@ -343,9 +381,21 @@ h1 {
     font-size: 1.3rem;
   }
 
-  .working-heading {
-    font-size: 1.8rem;
+  .process-heading {
+    font-size:0.85rem;
   }
+  .working-heading {
+    font-size: 1.5rem;
+  }
+
+  .timeline-left-style {
+    padding: 0 2.5rem 0 3rem;
+  }
+
+  .timeline-right-style {
+    padding:0 3rem 0 2.5rem;
+  }
+
 
   .card {
     margin: 10px;
@@ -358,5 +408,26 @@ h1 {
 
   .carousel-container {
     width: 85%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  
+
+  .date-style {
+    font-size: 0.8rem;
+  } 
+  .sub-heading {
+    font-size: 0.9rem;
+  }
+  .small-subtext {
+    font-size: 0.7rem;
+  }
+  .timeline-left-style {
+    padding: 0 1.6rem 0 2rem;
+  }
+
+  .timeline-right-style {
+    padding:0 2rem 0 2rem;
   }
 }
