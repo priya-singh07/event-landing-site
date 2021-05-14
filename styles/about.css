@@ -25,6 +25,12 @@ body {
     font-size: 1.2rem;
 }
 
+.working-heading {
+  color:white; 
+  font-size:2.3rem; 
+  font-weight:1000;
+}
+
 .small-subtext {
     color: white;
     font-weight: 600;
@@ -158,4 +164,30 @@ body {
         padding: 0 2rem 1rem 3rem;
     }
 
+    .working-heading {
+      font-size: 1.5rem;
+    }
+
+    .small-subtext {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+  
+    .about-us-padding {
+      padding: 0 1.5rem 1rem 1.5rem;
+    }
+    
+    .small-subtext {
+      font-size: 0.7rem;
+    }
+
+    .about-image {
+      height: 95%;
+      width: 95%; /*57rem;*/
+      padding: 0 0 0 1rem;
+      /*background-color: pink;*/
+  }
+    
   }
