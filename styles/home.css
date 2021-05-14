@@ -3,6 +3,9 @@
 *{
     overflow-x: hidden;
 }
+/* * {
+  overflow-y: hidden;
+} */
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #101010;
@@ -280,10 +283,6 @@ p {
   padding-left: 5%;
 
 }
-/* 
-.col-lg-9 {
-  align-content: ;
-} */
 
 .navbar {
   padding:2rem 2rem 4.5rem 2rem;
@@ -338,6 +337,7 @@ h1 {
   .sticky-corner {
     position: static;
   }
+
 
   .sub-heading {
     font-size: 1.3rem;
