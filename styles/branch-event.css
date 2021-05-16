@@ -19,19 +19,20 @@ body {
 
 
 
-.about-us-padding {
-    padding: 0 2rem 1rem 4rem;
-}
-    
-.small-head {
-    font-weight:900; 
-    font-size: 1.2rem;
-}
+
 
 .working-heading {
+    color:white; 
+    font-size:2.3rem; 
+    font-weight:1000;
+    /*text-align:center;*/
+}
+
+.working-heading-2 {
   color:white; 
-  font-size:2.3rem; 
+  font-size:2rem; 
   font-weight:1000;
+  /*text-align:center;*/
 }
 
 .small-subtext {
@@ -40,12 +41,50 @@ body {
     font-size: 1rem;
 }
 
-.about-image {
-    height: 90%;
-    width: 90%; /*57rem;*/
-    padding: 0 0 0 2rem;
-    /*background-color: pink;*/
+.card-padding-left {
+  /*padding: 0 0 0 4.3rem;*/
 }
+.card-padding-middle {
+  /*padding: 0 0 0 2rem;*/
+}
+.card-padding-right {
+  /*padding: 0 0 0 0;*/
+}
+
+.txt-align {
+  text-align: left;
+}
+
+.crd-style {
+  height: 12rem; 
+  width: 18rem;
+  border: 0.1rem solid white;
+  border-radius: 0.6rem;
+}
+
+.inter-crd-style {
+  height: 11rem; 
+  width: 16rem;
+  border: 0.1rem solid white;
+  border-radius: 0.6rem;
+}
+
+.date-style {
+  font-weight:900;
+  font-size: 1rem;
+  padding: 0.8rem 0 0.2rem 0;
+} 
+
+.working-heading {
+  color:white; 
+  font-size:2.4rem; 
+  font-weight:1000;
+}
+
+
+
+
+
 
 
 
@@ -160,37 +199,43 @@ body {
     color: black;
   }
 
-
   @media only screen and (max-width: 767px) {
     
-    .about-us-padding {
-        padding: 0 2rem 1rem 3rem;
-    }
-
     .working-heading {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .working-heading-2 {
+      font-size: 1.2rem;
     }
 
     .small-subtext {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
+
+    .card-padding-left {
+      text-align:center;
+    }
+    .card-padding-middle {
+      text-align:center;
+    }
+    .card-padding-right {
+      text-align:center;
+    }
+    
   }
 
   @media only screen and (max-width: 375px) {
   
-    .about-us-padding {
-      padding: 0 1.5rem 1rem 1.5rem;
+    .working-heading {
+      font-size: 1.6rem;
+  }
+  .working-heading-2 {
+    font-size: 1.5rem;
+  }
+    .small-subtext {
+        font-size: 0.7rem;
     }
     
-    .small-subtext {
-      font-size: 0.7rem;
-    }
-
-    .about-image {
-      height: 95%;
-      width: 95%; /*57rem;*/
-      padding: 0 0 0 1rem;
-      /*background-color: pink;*/
-  }
+    
     
   }
