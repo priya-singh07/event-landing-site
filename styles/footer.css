@@ -9,10 +9,15 @@ hiding vertical scroll bar from every page
 
 
 .slant {
-    width: 110%;
+    /* width: 110%;
     background-color: #DDDDDD;
     transform: rotate(-3deg);
-    height: 100px;
+    height: 100px; */
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .container{
+    margin-top: 30px;
   }
 
   .left, .right {
@@ -86,3 +91,14 @@ hiding vertical scroll bar from every page
   align-items: center;
   }
 
+  @media only screen and (max-width: 767px) {
+    .slant{
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .slant{
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
