@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4287c80df9.js" crossorigin="anonymous"></script>
+
 
     <!--Google Font : Nunito-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,6 +18,8 @@
 
     <!-- For style(All CSS conent) -->
     <link rel="stylesheet" type="text/css" href="./styles/about.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
 
     <link rel="icon" href="images/favicon.ico">
     <title>About Us</title>
@@ -41,16 +45,16 @@
                     <a class="nav-link" href="#">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link active" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="teams.html">Team</a>
+                    <a class="nav-link" href="teams.html">Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Live</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -69,7 +73,7 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 150px;">
         <div class="row">
 
             <div class="col-12 col-md-5 col-lg-4">
@@ -108,10 +112,11 @@
 
 
     <!--Footer-->
-    <div class="slant" style="margin-bottom: -40px;"></div>
+    <div class="slant" >
     <footer class="below">
-        <div class="row" style="margin-left: 20px;">
-            <div class="col-6">
+        <div class="container">
+        <div class="row" >
+            <div class="col-lg-6">
                 <p class="left">Follow us on social media to get the latest updates</p>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -119,20 +124,19 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <div class="col-6">
-                <div class="container">
+            <div class="col-lg-6">
                     <p class="right">Enter your email to view the list of your registered events</p>
-                    <p><input id="mail" placeholder="email address">
-                        <span class="badge badge-secondary" style="margin: 0; padding: 0;"><button id="bttn"
+                    <input id="mail" placeholder="email address">
+                        <span><button id="bttn"
                                 style="margin: 0;">
                                 Submit </button></span>
-                    </p>
-                </div>
             </div>
         </div>
         <hr style="margin-top: 50px;">
+    </div>
         <div class="last">Created By Team ETERNALS.</div>
     </footer>
+    </div>
 
 
 

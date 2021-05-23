@@ -1,0 +1,104 @@
+/*
+hiding vertical scroll bar from every page
+*/
+::-webkit-scrollbar {
+    width: 0 !important
+}
+
+
+
+
+.slant {
+    /* width: 110%;
+    background-color: #DDDDDD;
+    transform: rotate(-3deg);
+    height: 100px; */
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .container{
+    margin-top: 30px;
+  }
+
+  .left, .right {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(61, 59, 59);
+    margin-bottom: 30px;
+  }
+
+  .below {
+    background-color: #DDDDDD;
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mail {
+    border: none;
+    height: 30px;
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  #bttn {
+    background-color: #ffc100;
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+
+  .fa-youtube:hover{
+    color: rgb(230, 59, 59);
+    transition: 0.5s;
+  }
+  
+  .fa-twitter:hover, .fa-facebook-square:hover{
+    color: rgba(18, 212, 212, 0.596);
+    transition: 0.5s;
+  }
+  
+  .fa-instagram:hover{
+    color: rgb(218, 30, 61);
+    transition: 0.5s;
+  }
+  
+  .fa-github{
+    color: rgb(43, 36, 36);
+    transition: 0.5s;
+  }
+
+  .fab {
+    padding: 0 1rem 0 1rem;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .last {
+    font-weight: 900;
+    color: rgb(61, 59, 59);
+    margin: 20px;
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .slant{
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .slant{
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
+  }

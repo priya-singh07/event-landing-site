@@ -1,11 +1,13 @@
-/* All CSS Content */
+/* hiding vertical scroll bar from every page */
+::-webkit-scrollbar {
+  width: 0 !important
+}
+
 
 *{
     overflow-x: hidden;
 }
-/* * {
-  overflow-y: hidden;
-} */
+
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #101010;
@@ -62,17 +64,11 @@ body {
 
 .center-line {
   border-left: 0.58rem solid #ffc100;
-  height: 110%
-    /*58rem*/
-  ;
+  height: 110%;
   position: absolute;
   top: 0%;
   left: 0%;
 }
-
-
-
-
 
 .padding-for-mobile {
   padding: 0 1rem 2rem 4rem;
@@ -113,15 +109,6 @@ body {
   font-size: 0.95rem;
 }
 
-.card{
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px 20px;
-    display: block;
-    margin: auto;
-    font: 16px;
-    width:55%;
-}
 
 #text {
   font-weight: 850;
@@ -130,11 +117,11 @@ body {
 }
 
 #sugg {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 1000;
 }
 
-#btn, #bttn {
+#btn{
   background-color: #ffc100;
   color: black;
   padding: 10px 20px;
@@ -147,11 +134,6 @@ body {
   font-weight: bold;
 }
 
-#bttn {
-  /* margin: 15px; */
-  height: 40px;
-  padding: 10px;
-}
 
 #box, #msg{
     background-color: #DDDDDD;
@@ -169,27 +151,23 @@ body {
   height: 35px;
 }
 
-.below {
-  background-color: #DDDDDD;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 6px;
-  width: 100%;
-  height: 100%;
-}
-
 #spon {
   color: black;
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .image {
   height: 100px;
+}
+
+.image3{
+  height: 250px;
+  overflow-y: hidden;
 }
 
 .pic1, .pic2 {
@@ -218,37 +196,6 @@ body {
 .pic2{
     color: gray;
     font-size: small;
-}
-
-.left, .right {
-  font-size: large;
-  font-weight: bold;
-  margin-top: 50px;
-  color: rgb(61, 59, 59);
-  margin-bottom: 30px;
-}
-
-.slant {
-  width: 110%;
-  background-color: #DDDDDD;
-  transform: rotate(-3deg);
-  height: 100px;
-}
-
-#mail {
-  border: none;
-  height: 30px;
-  padding: 20px;
-  font-size: small;
-  font-weight: bold;
-  margin: 0;
-}
-
-.last {
-  font-size: small;
-  font-weight: bolder;
-  color: rgb(61, 59, 59);
-  margin: 20px;
 }
 
 .event, .some, .last, .pic, .pic1, .pic2 {
@@ -285,32 +232,6 @@ p {
   color: #ffc100;
 }
 
-.fab {
-  padding: 0 1rem 0 1rem;
-  font-size: 2rem;
-  color: black;
-}
-
-.fa-youtube:hover{
-  color: rgb(230, 59, 59);
-  transition: 0.5s;
-}
-
-.fa-twitter:hover, .fa-facebook-square:hover{
-  color: rgba(18, 212, 212, 0.596);
-  transition: 0.5s;
-}
-
-.fa-instagram:hover{
-  color: rgb(218, 30, 61);
-  transition: 0.5s;
-}
-
-.fa-github{
-  color: rgb(43, 36, 36);
-  transition: 0.5s;
-}
-
 .title-img3 {
   width: 25%;
   transform: rotate(-10deg);
@@ -320,19 +241,6 @@ p {
   padding-right: 5%;
   padding-left: 5%;
 
-}
-
-.navbar {
-  padding:2rem 2rem 4.5rem 2rem;
-}
-
-.nav-item {
-  padding: 0 18px 18px 0;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-weight: 400;
 
 }
 
@@ -357,10 +265,26 @@ h1 {
 
 .ex-btn {
   margin-top: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .carousel-container {
   width: 55%;
+}
+
+#cards {
+  padding: 10px 50px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    /* display: block;
+    margin: auto;
+    font: 16px;
+    width:55%; */
+    padding: 30px 20px;
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -374,6 +298,10 @@ h1 {
 
   .sticky-corner {
     position: static;
+  }
+
+  #cards {
+    padding: 0px 20px;
   }
 
 
@@ -396,11 +324,16 @@ h1 {
     padding:0 3rem 0 2.5rem;
   }
 
+  #spon{
+    font-size: 1.5rem;
+  }
+
+  .some, .eng, .feedback{
+    font-size: 1.5rem;
+  }
 
   .card {
-    margin: 10px;
-    width: 100%;
-}
+width: 100%;}
 
 .pic{
     flex-direction: column;
@@ -409,6 +342,19 @@ h1 {
   .carousel-container {
     width: 85%;
   }
+}
+
+@media only screen and (max-width: 575px){
+.title-img, .title-img3{
+  display: none;
+}
+
+.title-img2{
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 50px;
+}
 }
 
 @media only screen and (max-width: 375px) {
