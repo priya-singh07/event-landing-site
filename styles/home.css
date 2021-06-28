@@ -76,10 +76,10 @@ body {
   /*background-color:  white;*/
 }
 
-.sticky-corner {
+.stickyy-corner {
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 .timeline-left-style {
@@ -295,11 +295,11 @@ h1 {
   .padding-for-mobile {
     padding: 0 0 4rem 2rem;
   }
-
+  /*
   .sticky-corner {
     position: static;
   }
-
+  */
   #cards {
     padding: 0px 20px;
   }
